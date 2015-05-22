@@ -1,1 +1,14 @@
-<h1>Questions</h1>
+<!-- QUESTION-INDEX.HTML -->
+
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3">
+    <div class="panel panel-default">
+      <div class="panel-heading"><center>Questions</center></div>
+        <div class="list-group">
+          <a href="/questions/{{question.id}}" class="list-group-item" ng-repeat="question in questions">
+            {{question.content}}
+          </a>
+        </div>
+    </div>
+  </div>
+</div>
