@@ -7,6 +7,10 @@ angular
             .when('/', {
                 templateUrl: 'question-index.html',
                 controller: 'QuestionIndexCtrl'
+            })
+            .when('/questions/:questionId', {
+                templateUrl: 'question-show.html',
+                controller: 'QuestionShowCtrl'
             });
             
         $locationProvider.html5Mode({
